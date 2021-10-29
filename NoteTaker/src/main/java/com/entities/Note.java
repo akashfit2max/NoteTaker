@@ -62,4 +62,9 @@ public class Note {
 		// TODO Auto-generated constructor stub
 	}
 
+	@Override
+	public String toString() {
+		return "Note [id=" + id + ", title=" + title + ", content=" + content + ", date=" + date + "]";
+	}
+
 }
