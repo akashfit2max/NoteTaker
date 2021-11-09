@@ -34,6 +34,8 @@
 						<h5 class="card-title"><%=note.getTitle()%></h5>
 						<p class="card-text"><%=note.getContent()%></p>
 						<div class="container text-center mt-2">
+						
+						<p><b class="text-primary" ><%=note.getDate() %></b></p>
 							<a href="DeleteServlet?note_id=<%=note.getId()%>" class="btn btn-danger m-2">Delete</a> <a
 								href="edit.jsp?note_id=<%=note.getId()%>" class="btn btn-primary">Update</a>
 						</div>
