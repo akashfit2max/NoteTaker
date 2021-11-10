@@ -1,3 +1,5 @@
+<%@page import="java.text.SimpleDateFormat"%>
+<%@page import="java.text.DateFormat"%>
 <%@page import="org.apache.jasper.tagplugins.jstl.core.ForEach"%>
 <%@page import="com.entities.Note"%>
 <%@page import="java.util.List"%>
@@ -26,6 +28,7 @@
 				/* creating a query object to fetch data */
 				Query q = s.createQuery("from Note");
 				List<Note> notes = q.list();
+				DateFormat df = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
 				for (Note note : notes) {
 				%>
 				<div class="card mt-3">
@@ -34,8 +37,10 @@
 						<h5 class="card-title"><%=note.getTitle()%></h5>
 						<p class="card-text"><%=note.getContent()%></p>
 						<div class="container text-center mt-2">
-						
-						<p><b class="text-primary" ><%=note.getDate() %></b></p>
+
+							<p class="text-right">
+								<b class="text-primary"><%=df.format(note.getDate())%></b>
+							</p>
 							<a href="DeleteServlet?note_id=<%=note.getId()%>" class="btn btn-danger m-2">Delete</a> <a
 								href="edit.jsp?note_id=<%=note.getId()%>" class="btn btn-primary">Update</a>
 						</div>
