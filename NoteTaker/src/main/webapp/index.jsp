@@ -12,15 +12,15 @@
 <title>NoteTaker</title>
 </head>
 <body>
-	<div class="container">
+	<div class="container ">
 		<%@include file="navbar.jsp"%>
 		<br>
 		<div class="card py-5">
 			<img alt="" class="img-fluid mx-auto" style="max-width: 400px;" src="img/copywriting.png">
-			<h1 class="text-primary text-center text-uppercase" style="font-family: 'Mochiy Pop P One', sans-serif;">Start
-				Taking Your Notes</h1>
+			<h1 class="text-center text-uppercase" style="font-family: 'Mochiy Pop P One', sans-serif; color: #673ab7"><b>Start
+				Taking Your Notes</b></h1>
 			<div class="container text-center mt-3">
-				<button class="btn btn-outline-primary text-center">Start Here</button>
+				<a href="add_note.jsp" class="btn btn-outline-primary text-center  m-2">Start Here</a>
 			</div>
 		</div>
 	</div>
