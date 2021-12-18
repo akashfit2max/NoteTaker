@@ -13,13 +13,16 @@
 <meta charset="ISO-8859-1">
 <title>All Notes: Notetaker</title>
 <%@include file="all_js_css.jsp"%>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
 </head>
 <body>
 
 	<div class="container">
 		<%@include file="navbar.jsp"%>
 		<br>
-		<h1 class="text-uppercase">All Notes</h1>
+		<h2 style="font-family: 'Mochiy Pop P One', sans-serif; color: #673ab7" class="text-uppercase">All Notes</h1>
 
 		<div class="row">
 			<div class="col-12">

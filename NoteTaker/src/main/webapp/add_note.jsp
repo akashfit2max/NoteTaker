@@ -4,15 +4,19 @@
 <head>
 <meta charset="ISO-8859-1">
 <%@include file="all_js_css.jsp"%>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="shortcut icon" href="img/post-it.png">
+<link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
 <title>Add Notes: Home page</title>
 </head>
 <body>
 	<div class="container">
 		<%@include file="navbar.jsp"%>
 		<br>
-		<h3>
+		<h2 style="font-family: 'Mochiy Pop P One', sans-serif;">
 			<strong>PLEASE FILL YOUR NOTE DETAILS</strong>
-		</h3>
+		</h2>
 		<br>
 		<form action="SaveNoteServlet" method="post">
 			<div class="form-group">
